@@ -7,7 +7,6 @@ import { Moon, Sun } from "lucide-react"
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme()
 
-  // enquanto o next-themes ainda não resolveu o tema, não renderiza o botão
   if (typeof resolvedTheme === "undefined") return null
 
   const isDark = resolvedTheme === "dark"
