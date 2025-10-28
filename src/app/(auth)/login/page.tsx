@@ -33,10 +33,8 @@ export default function LoginPage() {
   })
 
   const onSubmit = (values: LoginValues) => {
-    // por enquanto, só feedback visual:
     toast.success("Tentando entrar… (stub)")
     console.log("login values:", values)
-    // aqui depois chamaremos o backend (FastAPI) com fetch/axios
   }
 
   return (
