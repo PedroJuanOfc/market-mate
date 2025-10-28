@@ -97,6 +97,46 @@ export default function Home() {
           </Card>
         </div>
       </section>
+      <section className="space-y-6">
+        <h2 className="text-2xl font-semibold">Como funciona</h2>
+        <ol className="grid gap-4 md:grid-cols-3">
+          <li className="rounded-xl border p-5">
+            <div className="text-sm text-muted-foreground">Passo 1</div>
+            <div className="mt-1 font-medium">Crie sua conta</div>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Leva segundos. Depois, personalize seu perfil e preferências.
+            </p>
+          </li>
+          <li className="rounded-xl border p-5">
+            <div className="text-sm text-muted-foreground">Passo 2</div>
+            <div className="mt-1 font-medium">Crie uma lista</div>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Dê um nome, convide pessoas e comece a adicionar itens.
+            </p>
+          </li>
+          <li className="rounded-xl border p-5">
+            <div className="text-sm text-muted-foreground">Passo 3</div>
+            <div className="mt-1 font-medium">Compre sem esquecer</div>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Marque itens, acompanhe o que falta e receba sugestões.
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section className="rounded-2xl border p-8 text-center">
+        <h3 className="text-xl font-semibold">Pronto para testar?</h3>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Experimente agora e convide alguém para compartilhar a lista com você.
+        </p>
+        <div className="mt-5 flex justify-center gap-3">
+          <Button asChild>
+            <Link href="/register">Criar conta</Link>
+          </Button>
+          <Button asChild variant="outline">
+            <Link href="/login">Entrar</Link>
+          </Button>
+        </div>
+      </section>
     </div>
   );
 }
